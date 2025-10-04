@@ -4,12 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
+    color: black;
 }
 
 body {
   font-family: 'Lora', serif;
-  color: #fff;
+  color: white;
   background-color: #000;
 }
 
@@ -368,4 +368,57 @@ z-index: 2000;    /* keep it above everything */
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1rem;
+}
+
+.rating {
+  background-color: #000; /* black footer */
+  padding: 1rem 0;
+  text-align: center;
+  color: #fff;
+  font-family: 'Cinzel', serif;
+}
+
+.rating-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem; /* space between stars and score */
+}
+
+.rating .stars {
+  font-size: 2rem;        /* desktop star size */
+  color: #f1c40f;         /* bright yellow stars */
+}
+
+.rating .stars span {
+  margin: 0 0.1rem;
+  display: inline-block;
+}
+
+.critics-score {
+  font-size: 1.2rem;
+  color: #3498db;         /* blue text for score */
+  font-weight: bold;
+}
+
+/* ===== Mobile Styling ===== */
+@media (max-width: 768px) {
+  .rating .stars {
+    font-size: 1.5rem;
+  }
+
+  .critics-score {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .rating .stars {
+    font-size: 1.2rem;
+  }
+
+  .critics-score {
+    font-size: 0.9rem;
+  }
 }
