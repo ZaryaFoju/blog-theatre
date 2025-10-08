@@ -410,6 +410,12 @@ z-index: 2000;    /* keep it above everything */
   .critics-score {
     font-size: 1rem;
   }
+
+  /*Audio */
+  .audio-section audio {
+    max-width: 100%;
+  }
+  
 }
 
 @media (max-width: 480px) {
@@ -420,4 +426,16 @@ z-index: 2000;    /* keep it above everything */
   .critics-score {
     font-size: 0.9rem;
   }
+}
+
+/* Audio Styles */
+.audio-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+.audio-section audio {
+  width: 100%;
+  max-width: 600px;
+  outline: none;
+  border-radius: 8px;
 }
